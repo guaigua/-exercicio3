@@ -24,8 +24,7 @@ export class SearchComponent implements OnInit {
   }
    
   onSearch(params){
-    console.log(params);
-    console.log(this.searchText)
+    console.log(params);  
      this.apiServ.getTodos(this.searchText)
     .subscribe(imagenes => this.imagenes = imagenes);
   }
