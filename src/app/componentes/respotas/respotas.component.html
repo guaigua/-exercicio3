@@ -1,0 +1,9 @@
+
+ <app-header [childMessage]="parentMessage"></app-header>
+
+<div class="container s130">
+
+    <img class="mt-1 mb-1 ml-1 mr-2" [src]="i.images.fixed_width.url" *ngFor="let i of imagenes.data" />
+    
+</div>
+<app-footer></app-footer>

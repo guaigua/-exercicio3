@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-
-  private api_key = 'THNn0l46XMw1KlASgKDqCpi1ma4jvZi8';
   
+  private api_key = environment.giphy;
+
   private limit = '24';
 
   constructor(private http: HttpClient) { }

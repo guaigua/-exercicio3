@@ -23,9 +23,9 @@ export class SearchComponent implements OnInit {
   ngOnInit(): void {
   }
    
-  onSearch(params){
-    console.log(params);  
-     this.apiServ.getTodos(this.searchText)
-    .subscribe(imagenes => this.imagenes = imagenes);
+  onSearch(formulario){
+    console.log(formulario.form.value.searchText);
+    location.href = `/respostas/${this.searchText}`;
+   
   }
 }

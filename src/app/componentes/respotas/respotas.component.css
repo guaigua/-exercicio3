@@ -1,7 +1,7 @@
 .s130 {
     min-height: 100vh;
     display: -ms-flexbox;
-    display: flex;
+
     -ms-flex-pack: center;
         justify-content: center;
     font-family: 'Poppins', sans-serif;
@@ -11,7 +11,3 @@
     background-size: 100%;
     padding: 15px;
   }
-
-.colum {
-    width: 300px;
-}

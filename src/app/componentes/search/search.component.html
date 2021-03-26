@@ -1,17 +1,23 @@
-<div class="container">
+<div class="container s130">
     <br/>
-	<div class="row justify-content-center">
+    
+	<div class="row justify-content-center align-items-center">
         <div class="col-12 col-md-10 col-lg-8">
-            <form class="card card-sm" #searchForm="ngForm" (ngSubmit)="onSearch(searchForm.value)" >
+            <div class="text-center">
+                <a class="navbar-brand logo" href="/"  name="upscroll" id="upscroll">
+                    <img class="" src="assets/images/anigif.png" id="icon" alt="User Icon" />
+                </a>
+            </div>
+            <form #nossoForm="ngForm" class="card card-sm"  (ngSubmit)="onSearch(nossoForm)" >
                 <div class="card-body row no-gutters align-items-center">
-                    <div class="col-auto">
+                    <div class="colum">
                         <i class="fas fa-search h4 text-body"></i>
                     </div>
-                    <div class="col">
-                        <input [(ngModel)]="searchText" name ="searchText" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search">
+                    <div class="col-md-9">
+                        <input [(ngModel)]="searchText" name ="searchText" class="form-control form-control-lg form-control-borderless" type="search" placeholder="Pesquisa Gif">
                     </div>
-                    <div class="col-auto">
-                        <button class="btn btn-lg btn-success" type="submit">Search</button>
+                    <div class="col-md-2">
+                        <button class="btn btn-lg btn-success" type="submit">Pesquisar</button>
                     </div>
                 </div>
             </form>
@@ -19,4 +25,4 @@
     </div>
 </div>
 
-<p>{{ imagenes | json }}</p>
+ 
